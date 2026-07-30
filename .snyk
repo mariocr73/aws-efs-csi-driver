@@ -5,3 +5,4 @@ exclude:
   global:
     - vendor/**
     - troubleshooting/log_collector.py
+    - pkg/driver/node_test.go # exec.Command is intentional test subprocess pattern
