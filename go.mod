@@ -163,3 +163,5 @@ replace (
 )
 
 go 1.25.0
+
+replace golang.org/x/crypto => github.com/openshift-sustaining/crypto v0.48.0-sec.1
