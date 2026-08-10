@@ -550,8 +550,8 @@ go.opentelemetry.io/proto/otlp/collector/trace/v1
 go.opentelemetry.io/proto/otlp/common/v1
 go.opentelemetry.io/proto/otlp/resource/v1
 go.opentelemetry.io/proto/otlp/trace/v1
-# golang.org/x/crypto v0.49.0
-## explicit; go 1.25.0
+# golang.org/x/crypto v0.49.0 => github.com/openshift-sustaining/crypto v0.48.0-sec.1
+## explicit; go 1.24.0
 golang.org/x/crypto/blowfish
 golang.org/x/crypto/chacha20
 golang.org/x/crypto/curve25519
@@ -1641,3 +1641,4 @@ sigs.k8s.io/yaml/goyaml.v2
 # k8s.io/kube-controller-manager => k8s.io/kube-controller-manager v0.33.2
 # k8s.io/kube-proxy => k8s.io/kube-proxy v0.33.2
 # k8s.io/sample-apiserver => k8s.io/sample-apiserver v0.33.2
+# golang.org/x/crypto => github.com/openshift-sustaining/crypto v0.48.0-sec.1
