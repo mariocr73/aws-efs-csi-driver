@@ -74,7 +74,7 @@ require (
 	go.opentelemetry.io/otel/sdk v1.34.0 // indirect
 	go.opentelemetry.io/otel/trace v1.34.0 // indirect
 	go.opentelemetry.io/proto/otlp v1.0.0 // indirect
-	golang.org/x/crypto v0.32.0 // indirect
+	golang.org/x/crypto v0.33.0 // indirect
 	golang.org/x/net v0.34.0 // indirect
 	golang.org/x/oauth2 v0.25.0 // indirect
 	golang.org/x/sys v0.30.0 // indirect
@@ -136,10 +136,12 @@ replace (
 	vbom.ml/util => github.com/fvbommel/util v0.0.0-20180919145318-efcd4e0f9787
 )
 
+replace (
+	golang.org/x/crypto => github.com/openshift-sustaining/crypto v0.33.0-sec.3
+	golang.org/x/net => github.com/openshift-sustaining/net v0.35.0-sec.3
+	google.golang.org/grpc => github.com/openshift-sustaining/grpc-go v1.71.3-sec.1
+)
+
 go 1.22.0
 
 toolchain go1.22.12
-
-replace google.golang.org/grpc => github.com/openshift-sustaining/grpc-go v1.71.3-sec.1
-
-replace golang.org/x/crypto => github.com/openshift-sustaining/crypto v0.33.0-sec.3
