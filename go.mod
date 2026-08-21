@@ -105,7 +105,7 @@ require (
 	go.uber.org/atomic v1.10.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.19.0 // indirect
-	golang.org/x/crypto v0.47.0 // indirect
+	golang.org/x/crypto v0.48.0 // indirect
 	golang.org/x/net v0.49.0 // indirect
 	golang.org/x/oauth2 v0.34.0 // indirect
 	golang.org/x/sync v0.19.0 // indirect
@@ -174,8 +174,11 @@ replace (
 	vbom.ml/util => github.com/fvbommel/util v0.0.0-20180919145318-efcd4e0f9787
 )
 
+replace (
+	golang.org/x/crypto => github.com/openshift-sustaining/crypto v0.48.0-sec.1
+	golang.org/x/net => github.com/openshift-sustaining/net v0.50.0-sec.3
+)
+
 go 1.24.0
 
 toolchain go1.24.13
-
-replace golang.org/x/crypto => github.com/openshift-sustaining/crypto v0.48.0-sec.1
